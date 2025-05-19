@@ -88,6 +88,12 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
+          {
+            type: 'docSidebar',
+            sidebarId: 'guideSidebar',
+            position: 'left',
+            label: 'Útmutatók',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/facebook/docusaurus',
@@ -104,7 +110,7 @@ const config = {
             items: [
               {
                 label: 'Útmutató',
-                to: '/docs/intro',
+                to: '/docs/tutorials/intro',
               },
             ],
           },
