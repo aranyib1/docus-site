@@ -43,6 +43,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          docItemComponent: "@theme/ApiItem",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -70,6 +71,28 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      'docusaurus-plugin-openapi-docs',
+      {
+        id: 'openapi', // A plugin egyedi azonosítója
+        docsPluginId: 'classic',
+        config: {
+          petstore: {  // Egyedi azonosító az API doksinak
+            specPath: 'openapi/petstore-api.yaml', // Az OpenAPI fájl elérési útja
+            outputDir: 'docs/petstore', // A generált Markdown fájlok helye
+            sidebarOptions: {
+              groupPathsBy: 'tag',  // Csoportosítás tagek alapján az oldalsávban
+          // További opciók a plugin dokumentációja szerint
+            },
+            // Opcionális: downloadButton: true,
+          },
+        }
+      }
+    ]
+  ],
+  themes: ['docusaurus-theme-openapi-docs'],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -93,6 +116,12 @@ const config = {
             sidebarId: 'guideSidebar',
             position: 'left',
             label: 'Útmutatók',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'petStoreApiSidebar',
+            position: 'left',
+            label: 'Petstore API',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
