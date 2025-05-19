@@ -30,6 +30,9 @@ const sidebars = {
     },
   ],
 
+  petStoreApiSidebar:
+    require('./docs/petstore/sidebar'),
+
   // But you can create a sidebar manually
   /*
   tutorialSidebar: [
