@@ -22,7 +22,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install docusaurus-plugin-openapi
+        run: npm install docusaurus-plugin-openapi --legacy-peer-deps
       # Adjuk hozzá ezt a lépést, hogy az API specifikáció is felépüljön.
       - name: Build API Docs
         run: npm run docusaurus gen-api-docs all
