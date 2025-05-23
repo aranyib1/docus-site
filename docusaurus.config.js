@@ -184,11 +184,9 @@ const config = {
 };
 
 module.exports = {
-  // ...
-  url: 'https://aranyib1.github.io', // Cseréld le a saját GitHub felhasználónevedre!
-  baseUrl: '/docus-site/', // Cseréld le a repository nevére!
-                                     // Ha a repository-hoz tartozó GitHub Pages neve <FELHASZNALONEVED>.github.io, akkor a baseUrl '/' legyen.
-  organizationName: 'aranyib1', // A GitHub felhasználóneved
-  projectName: 'docus-site', // A GitHub repository-d neve
-  // ...
+  title: 'Docusaurus dokumentáció', // 💡 Ez KÖTELEZŐ
+  url: 'https://aranyib1.github.io',
+  baseUrl: '/docus-site/',
+  organizationName: 'aranyib1',
+  projectName: 'docus-site',
 };
