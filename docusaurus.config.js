@@ -148,7 +148,7 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Kapcsolatok',
             items: [
               {
                 label: 'Stack Overflow',
@@ -165,7 +165,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'További tartalmak',
             items: [
               {
                 label: 'Blog',
