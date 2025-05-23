@@ -22,7 +22,7 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm run install
+        run: npm install
       # Adjuk hozzá ezt a lépést, hogy az API specifikáció is felépüljön.
       - name: Build API Docs
         run: npm run docusaurus gen-api-docs all
