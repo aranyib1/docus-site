@@ -13,11 +13,11 @@ jobs:
         uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 22
           cache: npm
 
       - name: Install dependencies
-        run: npm run install
+        run: npm install docusaurus-plugin-openapi --legacy-peer-deps
       - name: Build API docs
         run: npm run docusaurus gen-api-docs all
       - name: Build
