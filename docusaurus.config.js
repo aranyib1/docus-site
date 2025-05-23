@@ -192,5 +192,3 @@ module.exports = {
   projectName: 'docus-site', // A GitHub repository-d neve
   // ...
 };
-
-export default config;
