@@ -25,7 +25,7 @@ jobs:
         run: npm install docusaurus-plugin-openapi --legacy-peer-deps
       # Adjuk hozzá ezt a lépést, hogy az API specifikáció is felépüljön.
       - name: Build API Docs
-        run: npx docusaurus-plugin-openapi-cli generate all
+        run: npx docusaurus-plugin-openapi-docs generate all
       - name: Build website
         run: npm run build
 
