@@ -49,3 +49,6 @@ npm start
 ```
 
 A fenti parancs elindítja a fejlesztői szervert a `http://localhost:3000` címen.
+:::note
+Megjegyzés: Az alapértelmezett böngésző nyílik meg.
+:::
