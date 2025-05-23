@@ -15,15 +15,19 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  //url: 'https://your-docusaurus-site.example.com',
+  url: 'https://aranyib1.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  //baseUrl: '/',
+  baseUrl: '/docus-site/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  //organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'aranyib1',
+  //projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'docus-site',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -183,10 +187,4 @@ const config = {
     }),
 };
 
-module.exports = {
-  title: 'Docusaurus dokumentáció', // 💡 Ez KÖTELEZŐ
-  url: 'https://aranyib1.github.io',
-  baseUrl: '/docus-site/',
-  organizationName: 'aranyib1',
-  projectName: 'docus-site',
-};
+export default config;
